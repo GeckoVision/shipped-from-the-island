@@ -1,0 +1,923 @@
+{
+ "built_at": "2026-11-11T01:27:07Z",
+ "attendance": {
+  "dataset": "islanddao-v5-attendance",
+  "version": 11,
+  "fetched_at": "2026-11-10T23:01:41Z",
+  "days": [
+   {
+    "date": "2026-09-30",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-01",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-02",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-03",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-05",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-06",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-07",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-08",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-09",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-11",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-12",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-13",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-14",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-15",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-16",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-17",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 0
+   },
+   {
+    "date": "2026-10-18",
+    "day_status": "final",
+    "check_ins": 9,
+    "unique_attendees": 9,
+    "new_attendees": 9,
+    "returning_attendees": 0,
+    "cumulative_unique": 9
+   },
+   {
+    "date": "2026-10-19",
+    "day_status": "final",
+    "check_ins": 25,
+    "unique_attendees": 25,
+    "new_attendees": 25,
+    "returning_attendees": 0,
+    "cumulative_unique": 34
+   },
+   {
+    "date": "2026-10-20",
+    "day_status": "final",
+    "check_ins": 48,
+    "unique_attendees": 48,
+    "new_attendees": 16,
+    "returning_attendees": 32,
+    "cumulative_unique": 50
+   },
+   {
+    "date": "2026-10-21",
+    "day_status": "final",
+    "check_ins": 51,
+    "unique_attendees": 51,
+    "new_attendees": 12,
+    "returning_attendees": 39,
+    "cumulative_unique": 62
+   },
+   {
+    "date": "2026-10-22",
+    "day_status": "final",
+    "check_ins": 42,
+    "unique_attendees": 42,
+    "new_attendees": 8,
+    "returning_attendees": 34,
+    "cumulative_unique": 70
+   },
+   {
+    "date": "2026-10-23",
+    "day_status": "final",
+    "check_ins": 60,
+    "unique_attendees": 60,
+    "new_attendees": 10,
+    "returning_attendees": 50,
+    "cumulative_unique": 80
+   },
+   {
+    "date": "2026-10-24",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 80
+   },
+   {
+    "date": "2026-10-25",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 80
+   },
+   {
+    "date": "2026-10-26",
+    "day_status": "final",
+    "check_ins": 64,
+    "unique_attendees": 64,
+    "new_attendees": 11,
+    "returning_attendees": 53,
+    "cumulative_unique": 91
+   },
+   {
+    "date": "2026-10-27",
+    "day_status": "final",
+    "check_ins": 61,
+    "unique_attendees": 61,
+    "new_attendees": 7,
+    "returning_attendees": 54,
+    "cumulative_unique": 98
+   },
+   {
+    "date": "2026-10-28",
+    "day_status": "final",
+    "check_ins": 49,
+    "unique_attendees": 49,
+    "new_attendees": 2,
+    "returning_attendees": 47,
+    "cumulative_unique": 100
+   },
+   {
+    "date": "2026-10-29",
+    "day_status": "final",
+    "check_ins": 68,
+    "unique_attendees": 68,
+    "new_attendees": 9,
+    "returning_attendees": 59,
+    "cumulative_unique": 109
+   },
+   {
+    "date": "2026-10-30",
+    "day_status": "final",
+    "check_ins": 51,
+    "unique_attendees": 51,
+    "new_attendees": 3,
+    "returning_attendees": 48,
+    "cumulative_unique": 112
+   },
+   {
+    "date": "2026-10-31",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 112
+   },
+   {
+    "date": "2026-11-01",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 112
+   },
+   {
+    "date": "2026-11-02",
+    "day_status": "final",
+    "check_ins": 53,
+    "unique_attendees": 53,
+    "new_attendees": 18,
+    "returning_attendees": 35,
+    "cumulative_unique": 130
+   },
+   {
+    "date": "2026-11-03",
+    "day_status": "final",
+    "check_ins": 61,
+    "unique_attendees": 61,
+    "new_attendees": 8,
+    "returning_attendees": 53,
+    "cumulative_unique": 138
+   },
+   {
+    "date": "2026-11-04",
+    "day_status": "final",
+    "check_ins": 47,
+    "unique_attendees": 47,
+    "new_attendees": 6,
+    "returning_attendees": 41,
+    "cumulative_unique": 144
+   },
+   {
+    "date": "2026-11-05",
+    "day_status": "final",
+    "check_ins": 50,
+    "unique_attendees": 50,
+    "new_attendees": 5,
+    "returning_attendees": 45,
+    "cumulative_unique": 149
+   },
+   {
+    "date": "2026-11-06",
+    "day_status": "final",
+    "check_ins": 53,
+    "unique_attendees": 53,
+    "new_attendees": 2,
+    "returning_attendees": 51,
+    "cumulative_unique": 151
+   },
+   {
+    "date": "2026-11-07",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 151
+   },
+   {
+    "date": "2026-11-08",
+    "day_status": "final",
+    "check_ins": 0,
+    "unique_attendees": 0,
+    "new_attendees": 0,
+    "returning_attendees": 0,
+    "cumulative_unique": 151
+   },
+   {
+    "date": "2026-11-09",
+    "day_status": "final",
+    "check_ins": 32,
+    "unique_attendees": 32,
+    "new_attendees": 1,
+    "returning_attendees": 31,
+    "cumulative_unique": 152
+   },
+   {
+    "date": "2026-11-10",
+    "day_status": "partial",
+    "check_ins": 27,
+    "unique_attendees": 27,
+    "new_attendees": 1,
+    "returning_attendees": 26,
+    "cumulative_unique": 153
+   }
+  ],
+  "check_ins": 851,
+  "cumulative_unique": 153,
+  "peak": {
+   "date": "2026-10-29",
+   "day_status": "final",
+   "check_ins": 68,
+   "unique_attendees": 68,
+   "new_attendees": 9,
+   "returning_attendees": 59,
+   "cumulative_unique": 109
+  }
+ },
+ "editions": {
+  "as_of": "2026-11-10",
+  "source": "IslandDAO check-in program on Solana, read through an Envio HyperIndex indexer (counts identical to Gecko's own indexer, compared 9 Nov 2026)",
+  "unit": "check-in identifiers (one per account), not verified unique people",
+  "v4": {
+   "name": "IslandDAO V4",
+   "place": "Koh Samui, Thailand",
+   "dates": "3-28 Jun 2026",
+   "registrations": 215,
+   "check_ins": 548,
+   "checked_in": 100
+  },
+  "v5": {
+   "name": "IslandDAO V5",
+   "place": "Florianópolis, Brazil",
+   "dates": "19 Oct-12 Nov 2026",
+   "registrations": 275,
+   "check_ins": 851,
+   "checked_in": 153
+  },
+  "comeback": {
+   "checked_in_at_both": 16,
+   "share_of_v5": 0.1,
+   "share_of_v4": 0.16,
+   "median_days_v5_returners": 14.5,
+   "median_days_v5_first_timers": 4
+  }
+ },
+ "ledger": {
+  "rows": [
+   {
+    "project": "Brot Markets",
+    "domain": "brot.markets",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "Brot posted a 'BAKED REPORT': its team talked to IslandDAO, hit some issues, and said the product is on devnet.",
+    "source_url": "https://x.com/brotmarkets/status/2118381797083881923",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Brot Markets",
+    "domain": "brot.markets",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO replied to Brot's devnet report with 'this is the way'.",
+    "source_url": "https://x.com/islanddao/status/2118383231602946252",
+    "source_type": "islanddao_official",
+    "confidence": "medium"
+   },
+   {
+    "project": "Brot Markets",
+    "domain": "brot.markets",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Official site states Brot is in a test phase on Solana devnet with test SOL, the program is not audited, mainnet is 'coming soon', and opening a campaign will cost US$500 in SOL.",
+    "source_url": "https://brot.markets/dev0x",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Chainless",
+    "domain": "chainless.finance",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "Chainless was one of three startups highlighted by organizers at the IslandDAO v5 Demo Day (29 Oct, Open Lounge Jurere In).",
+    "source_url": "https://startupi.com.br/islanddao-florianopolis-blockchain/",
+    "source_type": "third_party",
+    "confidence": "high"
+   },
+   {
+    "project": "Chainless",
+    "domain": "chainless.finance",
+    "milestone_date": "2026-11-03",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "Chainless shipped seven iOS releases between 2 Oct and about 3 Nov 2026 (1.27.0 to 1.27.5): new liquidity pools on Ethereum, Base and Arbitrum, in-flow bridge suggestions, Bitcoin and Pix withdrawal improvements.",
+    "source_url": "https://apps.apple.com/br/app/chainless-cripto-com-pix/id6476666418",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Chainless",
+    "domain": "chainless.finance",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "An IslandDAO organizer named @chainlesscripto as one of the promising analytics-driven projects 'discovered here at @islanddao Brazil'.",
+    "source_url": "https://x.com/takisoul/status/2118366088509395178",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Cloak",
+    "domain": "cloak.ag",
+    "milestone_date": "2026-10-23",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "IslandDAO cofounder's recap: Cloak came to v3 in Mykonos a year ago, won 3rd place at the Colosseum Cypherpunk hackathon and joined Cohort 4, went live on mainnet, has private payments and payroll live.",
+    "source_url": "https://x.com/takisoul/status/2113655967757791496",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Cloak",
+    "domain": "cloak.ag",
+    "milestone_date": "2026-10-28",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO story post: 'A year ago, @cloak_ag came to @islanddao and started shipping. Today, they're live on mainnet and back on the island' in Brazil alongside Superteam Brazil (video).",
+    "source_url": "https://x.com/islanddao/status/2115470093446443192",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Cloak",
+    "domain": "cloak.ag",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Official site banner: 'Private USDC, USDT & SOL payments are now open to everyone'; company page names Cloak Privacy Corp. and lists an SDK, docs and a GitHub org.",
+    "source_url": "https://www.cloak.ag/",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Conta",
+    "domain": "conta.vc",
+    "milestone_date": "2026-10-25",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "IslandDAO organizer paid the group food order through conta.vc 'in seconds', in USDC on Solana.",
+    "source_url": "https://x.com/takisoul/status/2114471521846690292",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Conta",
+    "domain": "conta.vc",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "Conta.vc was listed among the projects presented at IslandDAO v5 in Florianopolis (Pix payments in reais on blockchain rails, digital dollar to real conversion).",
+    "source_url": "https://bitnoticias.com.br/noticias/florianopolis-vira-polo-internacional-de-blockchain-solana",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Conta",
+    "domain": "conta.vc",
+    "milestone_date": "2026-11-03",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "@contavcbr went from 469 to 1,296 monthly active wallets in October 2026, per IslandDAO organizer's week-3 recap.",
+    "source_url": "https://x.com/takisoul/status/2117415439622115695",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Envio",
+    "domain": "envio.dev",
+    "milestone_date": "2026-10-28",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Envio published an open-source HyperIndex indexer for the Solana program behind IslandDAO event check-ins plus a live IslandDAO x Envio dashboard (leaderboard, analytics, islander profiles).",
+    "source_url": "https://github.com/enviodev/envio-islanddao-demo",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Envio",
+    "domain": "envio.dev",
+    "milestone_date": "2026-10-30",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "Developer Update October 2026: HyperIndex v3.14.0 (Rust terminal UI, add a chain to a running indexer, type-checked handlers) and Envio Indexer passed all 44 reliability checks in its open benchmark.",
+    "source_url": "https://docs.envio.dev/blog/developer-update-october-2026",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Envio",
+    "domain": "envio.dev",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "An IslandDAO organizer named @envio_indexer among promising projects 'discovered here at @islanddao Brazil'.",
+    "source_url": "https://x.com/takisoul/status/2118366088509395178",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Founder Cafe on Solana / Founder Haus",
+    "domain": "founderhaus.club",
+    "milestone_date": "2026-10-26",
+    "milestone_type": "partnership",
+    "kind": "outcome",
+    "claim": "A local outlet reported Founder Haus among the organizers listed on the IslandDAO v5 Demo Day page.",
+    "source_url": "https://www.deolhonailha.com.br/florianopolis/noticias/islanddao-demo-day-v5-jurere-solana-29-outubro-2026/",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "FUD",
+    "domain": "fud.markets",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "dapp_store",
+    "kind": "outcome",
+    "claim": "FUD posted that it is live on the Solana Mobile dApp Store, with prediction markets tradable on the Seeker.",
+    "source_url": "https://x.com/fudmarkets/status/2119084284057391153",
+    "source_type": "self_published",
+    "confidence": "medium"
+   },
+   {
+    "project": "FUD",
+    "domain": "fud.markets",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Official site shows LONG/SHORT crypto markets on Solana, 15-minute markets, a live points program, and a live $FUD token (mint Gcku9A4XsNEv42WjHFrpyNJt5u5nwZDDh1BFyrqGpump) linked to Dexscreener.",
+    "source_url": "https://fud.markets/markets",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "MOIC Digital",
+    "domain": "moicdigital.com",
+    "milestone_date": "2026-11-04",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Published how it automated most of its sales team's operational work with an internal AI system (Petros).",
+    "source_url": "https://www.moicdigital.com/blog",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "Mutav",
+    "domain": "mutav.finance",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "Mutav presented its Solana-based rental-guarantee reserve at the IslandDAO v5 Demo Day, Open Lounge Jurere In, Florianopolis.",
+    "source_url": "https://startupi.com.br/islanddao-florianopolis-blockchain/",
+    "source_type": "third_party",
+    "confidence": "high"
+   },
+   {
+    "project": "Mutav",
+    "domain": "mutav.finance",
+    "milestone_date": "2026-10-30",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO-affiliated account thanked Mutav 'for participating in @islanddao v5' and called it the first decentralized rental guarantee protocol on Solana.",
+    "source_url": "https://x.com/Whalesfriend/status/2116020237476962716",
+    "source_type": "third_party",
+    "confidence": "high"
+   },
+   {
+    "project": "Mutav",
+    "domain": "mutav.finance",
+    "milestone_date": "2026-11-06",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "Mutav published its blog with four guides on Brazilian rental guarantees (Lei 8.245/91), all dated 06 Nov 2026.",
+    "source_url": "https://www.mutav.finance/blog",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Nora Finance",
+    "domain": "nora.finance",
+    "milestone_date": "2026-10-23",
+    "milestone_type": "partnership",
+    "kind": "outcome",
+    "claim": "Cloak's privacy technology was reported to power the launch of private $BRS transactions, in collaboration with Nora Finance.",
+    "source_url": "https://coinfomania.com/cloak-powers-first-private-brazilian-real-stablecoin/",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Nora Finance",
+    "domain": "nora.finance",
+    "milestone_date": "2026-11-03",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO published an interview with Nora's builder: 'building @norafinancexyz, a BRL stablecoin ecosystem. Making the Brazilian real programmable onchain.'",
+    "source_url": "https://x.com/islanddao/status/2117588854760984578",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Nora Finance",
+    "domain": "nora.finance",
+    "milestone_date": "2026-11-03",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Press named Nora Finance among five startups that took part in IslandDAO v5 in Florianopolis (BRS, 1:1 BRL stablecoin with Pix mint and redeem).",
+    "source_url": "https://bitnoticias.com.br/noticias/florianopolis-vira-polo-internacional-de-blockchain-solana",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Otta",
+    "domain": "otta.to",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "IslandDAO showed the Otta wallet built by its CTO ('Our CTO has been cooking! Check out @OttaTech wallet') with four app screenshots.",
+    "source_url": "https://x.com/islanddao/status/2118403447385202950",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Otta",
+    "domain": "otta.to",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Official site shows only 'Otta. Coming soon.'",
+    "source_url": "https://otta.to/",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Pollar",
+    "domain": "pollar.xyz",
+    "milestone_date": "2026-10-24",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "Pollar published @pollar/core and @pollar/react v0.12.0 (current 'latest' tag) to npm.",
+    "source_url": "https://registry.npmjs.org/@pollar/core",
+    "source_type": "third_party",
+    "confidence": "high"
+   },
+   {
+    "project": "Pollar",
+    "domain": "pollar.xyz",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Pollar shipped five prerelease builds (0.12.1-rc.9 to rc.14) between 31 Oct and 7 Nov 2026, i.e. active release cadence during v5.",
+    "source_url": "https://registry.npmjs.org/@pollar/react",
+    "source_type": "third_party",
+    "confidence": "high"
+   },
+   {
+    "project": "Pollar",
+    "domain": "pollar.xyz",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "Site reports 257 developers, 629 apps created, 36 apps in production, 4,912 wallets and 51,371 npm downloads in the last 12 months, 'as of Nov 7, 2026'.",
+    "source_url": "https://www.pollar.xyz/",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "Proof of Exploit",
+    "domain": "proofofexploit.com",
+    "milestone_date": "2026-10-28",
+    "milestone_type": "sponsor_of_v5",
+    "kind": "outcome",
+    "claim": "IslandDAO: 'They came to IslandDAO v4 as attendees and came back for v5 as sponsors. @ProofOfExploit took 1st at the v4 hackathon and now audits code for Solana projects.'",
+    "source_url": "https://x.com/islanddao/status/2115435904575930499",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Reflex",
+    "domain": "none_found",
+    "milestone_date": "2026-11-02",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO builder spotlight: a Superteam Argentina builder 'is shipping @usereflexmarket on Solana, an incentive layer for prediction markets' (video).",
+    "source_url": "https://x.com/islanddao/status/2117274975967019383",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "Reflex",
+    "domain": "none_found",
+    "milestone_date": "2026-11-02",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Last public push to the Reflex GitHub repo, the same day IslandDAO's spotlight post went out.",
+    "source_url": "https://github.com/franRappazzini/reflex",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Ride Markets",
+    "domain": "ride.markets",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "product_launch",
+    "kind": "outcome",
+    "claim": "Official site flags a 'Launchpad NEW': launch a coin that gets its own Ride vault, bonding at $8,000 with $2,000 to the vault and the rest locked as Meteora liquidity.",
+    "source_url": "https://www.ride.markets/launchpad",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "Ride Markets",
+    "domain": "ride.markets",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Official docs describe the product (post a small bond, trade a fund's capital, keep a share of the profit) and an agent API ('Ride for agents', auth and signing, API reference).",
+    "source_url": "https://www.ride.markets/docs",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "Rivool",
+    "domain": "none_found",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "Startupi names Rivool (wealth platform: global dollar account, international investments, digital assets, self-custody) among the projects highlighted at the IslandDAO v5 Demo Day and IslandHack.",
+    "source_url": "https://startupi.com.br/islanddao-florianopolis-blockchain/",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "Stonkpile",
+    "domain": "stonkpile.xyz",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Nightly snapshot commits continued through v5 (Snapshot 2026-11-06, Snapshot 2026-11-07); site last rebuild 2026-11-07 20:58 UTC with a free JSON API and MCP server.",
+    "source_url": "https://api.github.com/repos/DimiMili/stonkpile/commits?per_page=2",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Superteam Academy",
+    "domain": "st.academy",
+    "milestone_date": "2026-11-06",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "Active development during v5: GitHub solanabr/superteam-academy received fix commits on 6 Nov 2026 (#1302, #1306, #1307); site shows a 'Beta' badge.",
+    "source_url": "https://api.github.com/repos/solanabr/superteam-academy/commits?per_page=3",
+    "source_type": "self_published",
+    "confidence": "high"
+   },
+   {
+    "project": "Test Drive",
+    "domain": "testdrive.so",
+    "milestone_date": "2026-11-05",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "A Brot Markets campaign (Solana devnet prediction markets, $100 reward pool) ran live on Test Drive, with five builder reviews published 5 and 6 Nov 2026.",
+    "source_url": "https://testdrive.so/",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Test Drive",
+    "domain": "testdrive.so",
+    "milestone_date": "2026-11-07",
+    "milestone_type": "traction_self_reported",
+    "kind": "outcome",
+    "claim": "Homepage counters: 61 campaigns, 1,215 reviews, 341.6K views, 12.5K likes, 56 builders, $9,375 paid out; site labelled 'beta, obviously'.",
+    "source_url": "https://testdrive.so/",
+    "source_type": "own_site",
+    "confidence": "medium"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-10-26",
+    "milestone_type": "partnership",
+    "kind": "outcome",
+    "claim": "IslandDAO v5 attendees were included in the @runnersfam allocation.",
+    "source_url": "https://x.com/islanddao/status/2114752691406823686",
+    "source_type": "islanddao_official",
+    "confidence": "medium"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-10-28",
+    "milestone_type": "sponsor_of_v5",
+    "kind": "outcome",
+    "claim": "Proof of Exploit, 1st at the v4 hackathon, returned as a v5 sponsor and now audits code for Solana projects (video story).",
+    "source_url": "https://x.com/islanddao/status/2115435904575930499",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "Demo Day held at Open Lounge Jurere In, Florianopolis; between ten and twenty teams pitched; Startupi highlights Mutav, Rivool and Chainless.",
+    "source_url": "https://startupi.com.br/islanddao-florianopolis-blockchain/",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-10-29",
+    "milestone_type": "demo_day_pitch",
+    "kind": "outcome",
+    "claim": "IslandDAO Demo Day livestream on X Broadcasts; attendees voted for pitching projects in the IslandDAO app.",
+    "source_url": "https://x.com/islanddao/status/2115866581662081209",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-11-03",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO cofounder: 5 island builders are on the Colosseum Argentina Track board; Superteam Argentina had 9 local teams pitch at Demo Day.",
+    "source_url": "https://x.com/takisoul/status/2117415439622115695",
+    "source_type": "third_party",
+    "confidence": "medium"
+   },
+   {
+    "project": "IslandDAO v5 (event)",
+    "domain": "islanddao.org",
+    "milestone_date": "2026-11-04",
+    "milestone_type": "other",
+    "kind": "kept_shipping",
+    "claim": "IslandDAO hackathon still open after Demo Day: 5,000 USDC prize pool including a community award; deadline 10 Nov 23:59 Brasilia time.",
+    "source_url": "https://x.com/islanddao/status/2117988256130428982",
+    "source_type": "islanddao_official",
+    "confidence": "high"
+   }
+  ],
+  "entries": 40,
+  "projects": 19,
+  "outcomes": 20,
+  "projects_with_outcome": 15
+ }
+}

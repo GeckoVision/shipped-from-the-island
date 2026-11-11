@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shipped from the Island</title>
+<meta name="description" content="What IslandDAO v5 produced: on-chain check-ins proven against the chain, and every project milestone dated and sourced.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: a dated record. Figures, the comeback, the daily house, then the ledger by project. */
+:root {
+  --bg: #f1f5f2; --panel: #ffffff; --ink: #10302c; --muted: #52706b; --line: #cddcd6;
+  --sea: #0b6f5e; --sea-soft: #cfe8df; --sand: #c98a2b; --sand-soft: #f5e6cc; --new: #e0a13a;
+  --display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d201e; --panel: #13302c; --ink: #e5f1ee; --muted: #9dbab4; --line: #2a4843;
+    --sea: #5fd0b8; --sea-soft: #1d4741; --sand: #f0b55c; --sand-soft: #4a3518; --new: #f0b55c; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--body); }
+main { max-width: 1060px; margin: 0 auto; display: grid; gap: 64px;
+  padding-block: 48px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.4rem, 7vw, 4.6rem); line-height: 1; font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3.4vw, 2.1rem); line-height: 1.1; font-weight: 800; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0; }
+a { color: var(--sea); }
+section, header { display: grid; gap: 18px; min-width: 0; }
+.eyebrow { font: 500 0.78rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--sea); }
+.lede { font-size: 1.22rem; max-width: 60ch; color: var(--muted); }
+.note { color: var(--muted); max-width: 66ch; }
+.src { font: 400 0.76rem/1.45 var(--mono); color: var(--muted); }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 20px; border-top: 2px solid var(--ink); padding-top: 18px; }
+.figures div { display: grid; gap: 2px; }
+.figures b { font: 500 2.3rem/1.05 var(--mono); color: var(--sea); font-variant-numeric: tabular-nums; }
+.figures span { color: var(--muted); font-size: 0.95rem; }
+.comeback { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+.big { font: 800 clamp(3.4rem, 10vw, 6rem)/0.9 var(--display); color: var(--sand); }
+.compare { display: grid; gap: 10px; }
+.cbar { display: grid; grid-template-columns: 150px minmax(0, 1fr) 54px; gap: 10px; align-items: center; font-size: 0.95rem; }
+.cbar .t { height: 18px; background: var(--sea-soft); position: relative; }
+.cbar .t i { position: absolute; inset: 0 auto 0 0; background: var(--sea); }
+.cbar .t i.s { background: var(--sand); }
+.cbar b { font: 500 0.95rem var(--mono); text-align: right; }
+.chart { overflow-x: auto; }
+.chart svg { display: block; min-width: 640px; width: 100%; height: auto; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.9rem; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; vertical-align: -1px; }
+.ledger { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.proj { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.proj > * { min-width: 0; }
+.proj .dom { font: 400 0.8rem var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.items { display: grid; gap: 12px; }
+.item { display: grid; gap: 4px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font: 400 0.78rem var(--mono); color: var(--muted); }
+.chip { padding: 2px 7px; border-radius: 3px; background: var(--sea-soft); color: var(--sea); font-weight: 500; }
+.chip.k { background: var(--sand-soft); color: var(--sand); }
+.claim { overflow-wrap: anywhere; }
+.flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.flow div { background: var(--panel); border: 1px solid var(--line); padding: 12px; display: grid; gap: 4px; font-size: 0.93rem; }
+.flow b { font-family: var(--display); font-size: 1rem; }
+ul.rules { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 72ch; }
+.cta { background: var(--panel); border: 1px solid var(--line); padding: 18px; display: grid; gap: 8px; }
+footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-width: 72ch; }
+@media (max-width: 720px) {
+  .comeback { grid-template-columns: 1fr; }
+  .proj { grid-template-columns: 1fr; gap: 8px; }
+  .cbar { grid-template-columns: 110px minmax(0, 1fr) 48px; }
+}
+@media (prefers-reduced-motion: no-preference) { .cbar .t i { transition: width .6s ease; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">IslandDAO v5 · Florianópolis · 19 Oct – 12 Nov 2026</span>
+    <h1>Shipped from the Island</h1>
+    <p class="lede">What v5 produced. Attendance read from IslandDAO's own on-chain check-ins and proven against the chain. Every project milestone dated and linked to its source.</p>
+    <div class="figures" id="figures"></div>
+    <p class="src" id="asof"></p>
+  </header>
+
+  <section>
+    <span class="eyebrow">Edition over edition</span>
+    <h2>The builders who come back are the core</h2>
+    <div class="comeback">
+      <div style="display:grid;gap:10px">
+        <div class="big" id="cb-n">16</div>
+        <p id="cb-text" class="note"></p>
+      </div>
+      <div class="compare" id="cb-bars"></div>
+    </div>
+    <p class="src" id="cb-src"></p>
+  </section>
+
+  <section>
+    <span class="eyebrow">The house, day by day</span>
+    <h2>Who checked in, and who was new</h2>
+    <div class="legend"><span><i style="background:var(--sea)"></i>returning</span><span><i style="background:var(--new)"></i>first check-in</span></div>
+    <div class="chart" id="chart"></div>
+    <p class="src" id="chart-src"></p>
+  </section>
+
+  <section>
+    <span class="eyebrow">The ledger</span>
+    <h2 id="ledger-title">What projects logged during v5</h2>
+    <p class="note">Logged during v5, not caused by it. Each entry links to its source and says who said it: the project itself, the organizers, or a third party. Self-reported numbers are marked.</p>
+    <div class="ledger" id="ledger"></div>
+    <div class="cta">
+      <h3>Not on the list, or something is wrong?</h3>
+      <p>Open an issue with your project, the date, what you shipped and a public link. We add it after checking the link.</p>
+      <p><a href="https://github.com/GeckoVision/shipped-from-the-island/issues/new?title=Milestone%3A%20&amp;body=Project%3A%0ADate%3A%0AWhat%20shipped%3A%0APublic%20link%3A">Add your milestone</a></p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">How it is made</span>
+    <h2>From a check-in to a dataset you can ask about</h2>
+    <div class="flow">
+      <div><b>Check-in</b>Each builder checks in on-chain with the IslandDAO app. The venue key co-signs.</div>
+      <div><b>Index</b>Our own indexer decodes the check-in program, built from Envio's open IslandDAO demo.</div>
+      <div><b>Prove</b>Counts match the chain: 251 of 251 attendance accounts, and the reference indexer exactly.</div>
+      <div><b>Dataset</b>Gecko keeps a daily dataset, refreshed for free, with the source and time on every value.</div>
+      <div><b>Join</b>Milestones from public posts are matched to the event. Tonight this join is done by hand; it becomes a product step next.</div>
+      <div><b>Ask</b>The same dataset answers questions in Claude or any MCP client.</div>
+    </div>
+    <ul class="rules">
+      <li>Aggregates only. No wallet addresses, no names, no group under 5.</li>
+      <li>Numbers count check-in identifiers, one per account, not verified people.</li>
+      <li>Days follow the program's own rule: local days in Florianópolis (UTC−3).</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Built by <a href="https://geckovision.tech">Gecko</a> for IslandHack V5. Attendance comes from IslandDAO's on-chain check-in system. The indexer started from <a href="https://github.com/enviodev/envio-islanddao-demo">Envio's open IslandDAO demo</a>.</p>
+    <p>Data and method: <a href="https://github.com/GeckoVision/shipped-from-the-island">github.com/GeckoVision/shipped-from-the-island</a></p>
+  </footer>
+</main>
+<script>
+(async function () {
+  const fmt = (n) => (n == null ? "–" : Number(n).toLocaleString("en-US"));
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  let site;
+  try { site = await (await fetch("data/site.json", { cache: "no-store" })).json(); }
+  catch (err) { document.getElementById("asof").textContent = "The data file did not load. Open data/site.json in the repository."; return; }
+  const a = site.attendance, e = site.editions, l = site.ledger;
+
+  const figs = [[a.cumulative_unique, "builders checked in"], [a.check_ins, "check-ins"], [e.comeback.checked_in_at_both, "came back from V4"],
+    [l.projects_with_outcome, "projects with a public outcome"], [l.entries, "sourced ledger entries"]];
+  const fig = document.getElementById("figures");
+  figs.forEach(([v, t]) => { const d = el("div"); d.append(el("b", null, fmt(v)), el("span", null, t)); fig.append(d); });
+  document.getElementById("asof").textContent = `Attendance: Gecko dataset ${a.dataset} v${a.version}, read ${(a.fetched_at || "").replace("T", " ").replace("Z", " UTC")}. Page built ${site.built_at.replace("T", " ").replace("Z", " UTC")}.`;
+
+  const cb = e.comeback;
+  document.getElementById("cb-n").textContent = cb.checked_in_at_both;
+  document.getElementById("cb-text").textContent = `builders checked in at both V4 (Koh Samui, ${e.v4.checked_in} checked in) and V5 (Florianópolis, ${e.v5.checked_in}). The returners showed up on a median of ${cb.median_days_v5_returners} days at V5. First-timers: ${cb.median_days_v5_first_timers}.`;
+  const bars = document.getElementById("cb-bars");
+  const max = Math.max(cb.median_days_v5_returners, cb.median_days_v5_first_timers);
+  [["V5 days, returners", cb.median_days_v5_returners, "s"], ["V5 days, first-timers", cb.median_days_v5_first_timers, ""],
+   ["Share of V5", Math.round(cb.share_of_v5 * 100), "p"], ["Share of V4", Math.round(cb.share_of_v4 * 100), "p"]].forEach(([t, v, k]) => {
+    const r = el("div", "cbar"); const tr = el("div", "t"); const i = el("i", k === "s" ? "s" : "");
+    i.style.width = (k === "p" ? v : (v / max) * 100) + "%"; tr.append(i);
+    r.append(el("span", null, t), tr, el("b", null, k === "p" ? v + "%" : String(v))); bars.append(r);
+  });
+  document.getElementById("cb-src").textContent = `Counts as of ${e.as_of}. ${e.unit}.`;
+
+  const days = a.days.filter((d) => d.date >= "2026-10-18");
+  const W = 960, H = 260, pad = { l: 34, r: 8, t: 14, b: 40 };
+  const top = Math.max(...days.map((d) => d.unique_attendees || 0), 10);
+  const yMax = Math.ceil(top / 10) * 10, bw = (W - pad.l - pad.r) / days.length;
+  const y = (v) => pad.t + (H - pad.t - pad.b) * (1 - v / yMax);
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Daily check-ins, returning and new">`;
+  for (let g = 0; g <= yMax; g += 20) svg += `<line x1="${pad.l}" x2="${W - pad.r}" y1="${y(g)}" y2="${y(g)}" stroke="var(--line)"/><text x="${pad.l - 6}" y="${y(g) + 4}" font-size="11" text-anchor="end" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${g}</text>`;
+  days.forEach((d, i) => {
+    const x = pad.l + i * bw + 2, w = Math.max(bw - 4, 2);
+    const ret = d.returning_attendees || 0, nw = d.new_attendees || 0, tot = d.unique_attendees || 0;
+    if (tot > 0) {
+      svg += `<rect x="${x}" y="${y(ret)}" width="${w}" height="${y(0) - y(ret)}" fill="var(--sea)"><title>${d.date}: ${tot} checked in, ${nw} first check-in</title></rect>`;
+      svg += `<rect x="${x}" y="${y(ret + nw)}" width="${w}" height="${y(ret) - y(ret + nw)}" fill="var(--new)"/>`;
+    }
+    if (d.date === "2026-10-29") svg += `<text x="${x + w / 2}" y="${y(tot) - 6}" font-size="11" text-anchor="middle" fill="var(--ink)" font-family="IBM Plex Mono, monospace">Demo Day ${tot}</text>`;
+    if (i % 3 === 0) svg += `<text x="${x + w / 2}" y="${H - 18}" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${d.date.slice(5)}</text>`;
+  });
+  svg += "</svg>";
+  document.getElementById("chart").innerHTML = svg;
+  document.getElementById("chart-src").textContent = "Weekends were closed. Days with fewer than 5 check-ins show no split.";
+
+  const TYPE = { product_launch: "launch", dapp_store: "dApp Store", demo_day_pitch: "Demo Day", partnership: "partnership", sponsor_of_v5: "v5 sponsor",
+    traction_self_reported: "traction", hackathon_win: "hackathon", mainnet_launch: "mainnet", other: "kept shipping" };
+  const WHO = { self_published: "the project said", own_site: "project's site", islanddao_official: "organizers said", third_party: "third party" };
+  document.getElementById("ledger-title").textContent = `What ${l.projects} projects logged during v5`;
+  const groups = {};
+  l.rows.filter((r) => !r.project.startsWith("IslandDAO")).forEach((r) => (groups[r.project] = groups[r.project] || []).push(r));
+  const order = Object.keys(groups).sort((p, q) => groups[q].filter((r) => r.kind === "outcome").length - groups[p].filter((r) => r.kind === "outcome").length || p.localeCompare(q));
+  const box = document.getElementById("ledger");
+  order.forEach((p) => {
+    const rows = groups[p].sort((m, n) => m.milestone_date.localeCompare(n.milestone_date));
+    const card = el("div", "proj"); const head = el("div");
+    head.append(el("h3", null, p), el("div", "dom", rows[0].domain || ""));
+    const items = el("div", "items");
+    rows.forEach((r) => {
+      const it = el("div", "item"); const meta = el("div", "meta");
+      meta.append(el("span", null, r.milestone_date), el("span", r.kind === "outcome" ? "chip" : "chip k", TYPE[r.milestone_type] || r.milestone_type),
+        el("span", null, WHO[r.source_type] || r.source_type));
+      if (r.milestone_type === "traction_self_reported") meta.append(el("span", null, "self-reported"));
+      if (/^https?:\/\//.test(r.source_url)) { const a2 = el("a", null, "source"); a2.href = r.source_url; a2.rel = "noopener nofollow"; a2.target = "_blank"; meta.append(a2); }
+      it.append(meta, el("p", "claim", r.claim)); items.append(it);
+    });
+    card.append(head, items); box.append(card);
+  });
+})();
+</script>
+</body>
+</html>
