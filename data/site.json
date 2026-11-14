@@ -1,19 +1,10 @@
 {
- "built_at": "2026-11-11T01:27:07Z",
+ "built_at": "2026-11-14T19:51:19Z",
  "attendance": {
   "dataset": "islanddao-v5-attendance",
-  "version": 11,
-  "fetched_at": "2026-11-10T23:01:41Z",
+  "version": 14,
+  "fetched_at": "2026-11-14T19:50:11Z",
   "days": [
-   {
-    "date": "2026-09-30",
-    "day_status": "final",
-    "check_ins": 0,
-    "unique_attendees": 0,
-    "new_attendees": 0,
-    "returning_attendees": 0,
-    "cumulative_unique": 0
-   },
    {
     "date": "2026-10-01",
     "day_status": "final",
@@ -358,15 +349,24 @@
    },
    {
     "date": "2026-11-10",
-    "day_status": "partial",
+    "day_status": "final",
     "check_ins": 27,
     "unique_attendees": 27,
     "new_attendees": 1,
     "returning_attendees": 26,
     "cumulative_unique": 153
+   },
+   {
+    "date": "2026-11-11",
+    "day_status": "final",
+    "check_ins": 19,
+    "unique_attendees": 19,
+    "new_attendees": 0,
+    "returning_attendees": 19,
+    "cumulative_unique": 153
    }
   ],
-  "check_ins": 851,
+  "check_ins": 870,
   "cumulative_unique": 153,
   "peak": {
    "date": "2026-10-29",
@@ -379,7 +379,7 @@
   }
  },
  "editions": {
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-14",
   "source": "IslandDAO check-in program on Solana, read through an Envio HyperIndex indexer (counts identical to Gecko's own indexer, compared 9 Nov 2026)",
   "unit": "check-in identifiers (one per account), not verified unique people",
   "v4": {
@@ -395,7 +395,7 @@
    "place": "Florianópolis, Brazil",
    "dates": "19 Oct-12 Nov 2026",
    "registrations": 275,
-   "check_ins": 851,
+   "check_ins": 870,
    "checked_in": 153
   },
   "comeback": {
@@ -404,7 +404,8 @@
    "share_of_v4": 0.16,
    "median_days_v5_returners": 14.5,
    "median_days_v5_first_timers": 4
-  }
+  },
+  "comeback_as_of": "2026-11-10"
  },
  "ledger": {
   "rows": [
@@ -438,6 +439,17 @@
     "kind": "kept_shipping",
     "claim": "Official site states Brot is in a test phase on Solana devnet with test SOL, the program is not audited, mainnet is 'coming soon', and opening a campaign will cost US$500 in SOL.",
     "source_url": "https://brot.markets/dev0x",
+    "source_type": "own_site",
+    "confidence": "high"
+   },
+   {
+    "project": "Brot Markets",
+    "domain": "brot.markets",
+    "milestone_date": "2026-11-12",
+    "milestone_type": "other",
+    "kind": "outcome",
+    "claim": "Brot's devnet campaign 'Will we see 60 check-ins on the final day of IslandDAO V5?' closed NO with 12 entries, in test SOL. It settled on Gecko's attendance count: 19 check-ins on 11 Nov.",
+    "source_url": "https://v5.brot.markets/c/5368792077394394715",
     "source_type": "own_site",
     "confidence": "high"
    },
@@ -915,9 +927,9 @@
     "confidence": "high"
    }
   ],
-  "entries": 40,
+  "entries": 41,
   "projects": 19,
-  "outcomes": 20,
+  "outcomes": 21,
   "projects_with_outcome": 15
  }
 }

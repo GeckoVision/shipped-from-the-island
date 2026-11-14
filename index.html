@@ -110,6 +110,13 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
   </section>
 
   <section>
+    <span class="eyebrow">Used by</span>
+    <h2>A market settled on this data</h2>
+    <p class="note">Brot Markets opened a devnet campaign on 10 Nov: <q>Will we see 60 check-ins on the final day of IslandDAO V5?</q> Twelve entries, in test SOL. It closed <b>NO</b> on 12 Nov, read from Gecko's attendance dataset: 19 check-ins on 11 Nov, a closed day. The same daily rows are on this page.</p>
+    <p class="src"><a href="https://v5.brot.markets/c/5368792077394394715">Brot campaign 5368792077394394715</a> · Solana devnet, test SOL with no real value · dataset islanddao-v5-attendance v14</p>
+  </section>
+
+  <section>
     <span class="eyebrow">The ledger</span>
     <h2 id="ledger-title">What projects logged during v5</h2>
     <p class="note">Logged during v5, not caused by it. Each entry links to its source and says who said it: the project itself, the organizers, or a third party. Self-reported numbers are marked.</p>
@@ -129,7 +136,7 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
       <div><b>Index</b>Our own indexer decodes the check-in program, built from Envio's open IslandDAO demo.</div>
       <div><b>Prove</b>Counts match the chain: 251 of 251 attendance accounts, and the reference indexer exactly.</div>
       <div><b>Dataset</b>Gecko keeps a daily dataset, refreshed for free, with the source and time on every value.</div>
-      <div><b>Join</b>Milestones from public posts are matched to the event. Tonight this join is done by hand; it becomes a product step next.</div>
+      <div><b>Join</b>Milestones from public posts are matched to the event. For now this join is done by hand; a join step inside Gecko is in review.</div>
       <div><b>Ask</b>The same dataset answers questions in Claude or any MCP client.</div>
     </div>
     <ul class="rules">
@@ -170,7 +177,7 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
     i.style.width = (k === "p" ? v : (v / max) * 100) + "%"; tr.append(i);
     r.append(el("span", null, t), tr, el("b", null, k === "p" ? v + "%" : String(v))); bars.append(r);
   });
-  document.getElementById("cb-src").textContent = `Counts as of ${e.as_of}. ${e.unit}.`;
+  document.getElementById("cb-src").textContent = `Edition totals as of ${e.as_of}; comeback and days present as of ${e.comeback_as_of || e.as_of}. ${e.unit}.`;
 
   const days = a.days.filter((d) => d.date >= "2026-10-18");
   const W = 960, H = 260, pad = { l: 34, r: 8, t: 14, b: 40 };

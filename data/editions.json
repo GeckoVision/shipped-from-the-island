@@ -1,14 +1,29 @@
 {
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-14",
   "source": "IslandDAO check-in program on Solana, read through an Envio HyperIndex indexer (counts identical to Gecko's own indexer, compared 9 Nov 2026)",
   "unit": "check-in identifiers (one per account), not verified unique people",
-  "v4": {"name": "IslandDAO V4", "place": "Koh Samui, Thailand", "dates": "3-28 Jun 2026", "registrations": 215, "check_ins": 548, "checked_in": 100},
-  "v5": {"name": "IslandDAO V5", "place": "Florianópolis, Brazil", "dates": "19 Oct-12 Nov 2026", "registrations": 275, "check_ins": 851, "checked_in": 153},
+  "v4": {
+    "name": "IslandDAO V4",
+    "place": "Koh Samui, Thailand",
+    "dates": "3-28 Jun 2026",
+    "registrations": 215,
+    "check_ins": 548,
+    "checked_in": 100
+  },
+  "v5": {
+    "name": "IslandDAO V5",
+    "place": "Florianópolis, Brazil",
+    "dates": "19 Oct-12 Nov 2026",
+    "registrations": 275,
+    "check_ins": 870,
+    "checked_in": 153
+  },
   "comeback": {
     "checked_in_at_both": 16,
-    "share_of_v5": 0.10,
+    "share_of_v5": 0.1,
     "share_of_v4": 0.16,
     "median_days_v5_returners": 14.5,
     "median_days_v5_first_timers": 4
-  }
+  },
+  "comeback_as_of": "2026-11-10"
 }

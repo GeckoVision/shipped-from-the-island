@@ -4,7 +4,7 @@ What IslandDAO v5 produced, as data: attendance read from IslandDAO's on-chain c
 
 Live page: https://geckovision.github.io/shipped-from-the-island/
 
-Built by [Gecko](https://geckovision.tech) for IslandHack V5 (build area: Governance / DAOs + Treasury).
+Built by [Gecko](https://geckovision.tech) for IslandHack V5 (build area: Payments + Commerce).
 
 ## What is in this repository
 
@@ -23,7 +23,11 @@ Built by [Gecko](https://geckovision.tech) for IslandHack V5 (build area: Govern
 3. **Prove.** Our counts are identical to the reference indexer (V5 and V4 registrations and check-ins, 9 Nov 2026), and all 251 attendance accounts match a direct chain read (slot 466,981,886).
 4. **Dataset.** Gecko keeps `islanddao-v5-attendance`: one row per day, with new and returning check-ins, refreshed at no cost, with a source and a read time on every value.
 5. **Ledger.** Milestones come from public posts and sites: the project's own channels, the organizers, or third parties, each marked. Rows from personal accounts, rows outside the event window, and low-confidence rows were removed. Self-reported numbers are marked.
-6. **Join.** Tonight the ledger is joined to the event by hand. A join step inside Gecko is in review and will replace it.
+6. **Join.** For now the ledger is joined to the event by hand. A join step inside Gecko is in review and will replace it.
+
+## Used by
+
+- **Brot Markets** settled a devnet campaign on this data: ["Will we see 60 check-ins on the final day of IslandDAO V5?"](https://v5.brot.markets/c/5368792077394394715) closed NO on 12 Nov, with 19 check-ins on 11 Nov in `islanddao-v5-attendance` (version 14). Test SOL only.
 
 To rebuild: `python3 scripts/build_data.py`. With `GECKO_READER_KEY` set (a read-only key limited to that one dataset), it refreshes the attendance snapshot first.
 
