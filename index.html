@@ -57,6 +57,11 @@ section, header { display: grid; gap: 18px; min-width: 0; }
 .ledger { display: grid; gap: 0; border-top: 1px solid var(--line); }
 .proj { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
 .proj > * { min-width: 0; }
+.logo { width: 36px; height: 36px; object-fit: contain; background: #fff; border-radius: 8px; border: 1px solid var(--line); padding: 3px; box-sizing: border-box; flex: none; }
+.phead { display: flex; gap: 10px; align-items: center; margin-bottom: 4px; }
+.usedby { display: flex; gap: 18px; align-items: flex-start; }
+.usedby .logo { width: 64px; height: 64px; border-radius: 12px; padding: 6px; }
+.usedby > div { min-width: 0; display: grid; gap: 8px; }
 .proj .dom { font: 400 0.8rem var(--mono); color: var(--muted); overflow-wrap: anywhere; }
 .items { display: grid; gap: 12px; }
 .item { display: grid; gap: 4px; }
@@ -112,8 +117,10 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
   <section>
     <span class="eyebrow">Used by</span>
     <h2>A market settled on this data</h2>
+    <div class="usedby"><a href="https://brot.markets/"><img class="logo" src="assets/logos/brot.markets.png" alt="Brot Markets logo"></a><div>
     <p class="note">Brot Markets opened a devnet campaign on 10 Nov: <q>Will we see 60 check-ins on the final day of IslandDAO V5?</q> Twelve entries, in test SOL. It closed <b>NO</b> on 12 Nov, read from Gecko's attendance dataset: 19 check-ins on 11 Nov, a closed day. The same daily rows are on this page.</p>
     <p class="src"><a href="https://v5.brot.markets/c/5368792077394394715">Brot campaign 5368792077394394715</a> · Solana devnet, test SOL with no real value · dataset islanddao-v5-attendance v14</p>
+    </div></div>
   </section>
 
   <section>
@@ -202,6 +209,7 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
 
   const TYPE = { product_launch: "launch", dapp_store: "dApp Store", demo_day_pitch: "Demo Day", partnership: "partnership", sponsor_of_v5: "v5 sponsor",
     traction_self_reported: "traction", hackathon_win: "hackathon", mainnet_launch: "mainnet", other: "kept shipping" };
+  const LOGOS = {"brot.markets": "brot.markets.png", "chainless.finance": "chainless.finance.png", "cloak.ag": "cloak.ag.png", "conta.vc": "conta.vc.png", "envio.dev": "envio.dev.png", "founderhaus.club": "founderhaus.club.png", "fud.markets": "fud.markets.png", "islanddao.org": "islanddao.org.png", "moicdigital.com": "moicdigital.com.png", "mutav.finance": "mutav.finance.svg", "nora.finance": "nora.finance.svg", "otta.to": "otta.to.svg", "pollar.xyz": "pollar.xyz.png", "proofofexploit.com": "proofofexploit.com.png", "ride.markets": "ride.markets.svg", "st.academy": "st.academy.png", "stonkpile.xyz": "stonkpile.xyz.ico", "testdrive.so": "testdrive.so.png"};
   const WHO = { self_published: "the project said", own_site: "project's site", islanddao_official: "organizers said", third_party: "third party" };
   document.getElementById("ledger-title").textContent = `What ${l.projects} projects logged during v5`;
   const groups = {};
@@ -211,7 +219,9 @@ footer { color: var(--muted); font-size: 0.9rem; display: grid; gap: 6px; max-wi
   order.forEach((p) => {
     const rows = groups[p].sort((m, n) => m.milestone_date.localeCompare(n.milestone_date));
     const card = el("div", "proj"); const head = el("div");
-    head.append(el("h3", null, p), el("div", "dom", rows[0].domain || ""));
+    const ph = el("div", "phead"); const lf = LOGOS[rows[0].domain];
+    if (lf) { const img = el("img", "logo"); img.src = "assets/logos/" + lf; img.alt = ""; img.loading = "lazy"; img.width = 36; img.height = 36; ph.append(img); }
+    ph.append(el("h3", null, p)); head.append(ph, el("div", "dom", rows[0].domain || ""));
     const items = el("div", "items");
     rows.forEach((r) => {
       const it = el("div", "item"); const meta = el("div", "meta");

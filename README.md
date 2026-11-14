@@ -44,4 +44,7 @@ Open an issue with the project, the date, what shipped and a public link.
 
 ## Credits and licence
 
+Project logos in `assets/logos/` are each project's own site icon, shown to identify it; they belong to their owners and are not covered by the MIT licence.
+
+
 Attendance data comes from IslandDAO's on-chain check-in system. The indexer approach comes from Envio's open demo. Code in this repository is MIT licensed. The ledger quotes public sources, each linked.
